@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Namaste React</title>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script>
+      //Using Js to manipulate the DOM
+    /*let child=  document.createElement('h1');
+    child.innerHTML='Namaste Everyone';
+    let root = document.getElementById('root');
+    root.appendChild(child);
+      */
+     //Using React to Manipulate Dom
+     //creating a element
+     let ele=React.createElement('h1',{
+      id:"child",
+      className:"node1"
+     },'Welcome to React course');
+
+     let root=ReactDOM.createRoot(document.getElementById('root'));
+     root.render(ele);
+     
+    </script>
+</html>
